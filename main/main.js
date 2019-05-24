@@ -5,7 +5,7 @@ module.exports = function main(num) {
     var lcd_number_row2 = ['|.|','..|','._|','._|','|_|','|_.','|_.','..|','|_|','|_|'];
     var lcd_number_row3 = ['|_|','..|','|_.','._|','..|','._|','|_|','..|','|_|','..|'];
     //判断输入是否为数字
-    if(Number.isInteger(num)){
+    if(parseInt(num)){
         //将数字转换为字符串获取每一位数字
         var temp=String(num);
         //将每一位数字对应的lcd图案按行拼接
